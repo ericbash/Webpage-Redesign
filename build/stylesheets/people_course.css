@@ -1,0 +1,74 @@
+/* People Section */
+h1#people_header {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: left;
+  color: Black;
+  font-family: arial, sans-serif; }
+
+table#people_course {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  height: 100%; }
+
+table#people_course td, th {
+  border: 0.5px dotted #CCC; }
+
+table#people_course th {
+  background: #F3F3F3;
+  font-weight: bold;
+  font-size: 20px; }
+
+table#people_course td {
+  font-size: 18px; }
+
+table#people_course tr:nth-child(even) td {
+  background: #D5DEF2; }
+
+table#people_course tr:nth-child(odd) td {
+  background: #FEFEFE; }
+
+/*Teaching Section */
+h1#teaching_header {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: left;
+  color: Black;
+  font-family: arial, sans-serif; }
+
+.list_courses hr {
+  display: block;
+  padding: 0;
+  margin: 0px;
+  height: 0;
+  width: 75%;
+  max-height: 0;
+  font-size: 1px;
+  line-height: 0;
+  clear: both;
+  border: none;
+  border-top: 1px dotted #aaaaaa;
+  border-bottom: 1px dotted #ffffff; }
+
+.list_courses p {
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  text-align: left; }
+
+.list_courses h2 {
+  min-width: 800px;
+  text-align: left;
+  font-size: 20px;
+  color: #282F68;
+  font-family: arial, sans-serif; }
+
+.list_courses {
+  list-style-type: none;
+  background-color: #f2f2f2; }
+
+.list_courses a {
+  display: inline;
+  color: blue;
+  text-decoration: underline;
+  text-align: left;
+  padding: 0px; }

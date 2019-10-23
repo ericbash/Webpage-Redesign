@@ -1,0 +1,39 @@
+---
+title: "Awards"
+---
+<!-- #Created 2/24/2019 by Kavin Kaviarasan -->
+<!--Fixed issue with brackets and escaped slash -->
+
+<div class="intro">
+  <p>
+    <img src="../images/jim_davis.jpg" height="140px" border="1px">
+  </p>
+  <p>
+    <span class="greeting"> Hello Again Everyone!</span>
+    <br>
+    <br>
+      These are my achievements over the years.
+    <br>
+      Please take a look and hopefully something sparks your interest!
+    <br>
+      Have a good day!
+    <br>
+    <br>
+    </p>
+    </div>
+
+    <div class="content">
+      <table id="award_table">
+        <tr class="header">
+          <th id="header_title">Noteworthy achievments/Awards</th>
+                <% data.noteworthy.Awards.award.each do |item| %>
+                      <tr class="info">
+                        <% if item.length == 1 %>
+                        <td class="title"> <%= item[0] %> </td>
+                        <% elsif item.length == 2%>
+                            <td class="link">(<a href=<%=item[1]%>> <%=item[0]%> </a>) </td>
+                      </tr>
+                      <% end %>
+                      <% end %>
+        </table>
+      </div>

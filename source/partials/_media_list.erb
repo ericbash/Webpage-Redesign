@@ -1,0 +1,51 @@
+<!-- Created 2/24/2019 by Jack Dubbs -->
+<div class="media_list">
+  <ul class="category">
+
+    <li>TV and Video:</li>
+    <ul class="mention">
+      <% data.media.TV_and_Video.tv_and_video.each do |item| %>
+        <% item.each_with_index do |info,i| %>
+          <% if i == 0%>
+            <li class="source"> <%= info %> </li>
+          <% elsif i == 1%>
+            <li class="title"> <%= info %> </li>
+          <% else %>
+            <%= link_to('LINK',info,:class => 'links')%>
+          <% end %>
+        <% end %>
+      <% end %>
+    </ul>
+
+    <li>Radio:</li>
+    <ul class="mention">
+      <% data.media.Radio.radio.each do |item| %>
+        <% item.each_with_index do |info,i| %>
+          <% if i == 0%>
+            <li class="source"> <%= info %> </li>
+          <% elsif i == 1%>
+            <li class="title"> <%= info %> </li>
+          <% else %>
+            <%= link_to('LINK',info,:class => 'links')%>
+          <% end %>
+        <% end %>
+      <% end %>
+    </ul>
+
+    <li>Print:</li>
+    <ul class="mention">
+      <% data.media.Print.print.each do |item| %>
+        <% item.each_with_index do |info,i| %>
+          <% if i == 0%>
+            <li class="source"> <%= info %> </li>
+          <% elsif i == 1%>
+            <li class="title"> <%= info %> </li>
+          <% else %>
+            <%= link_to('LINK',info,:class => 'links')%>
+          <% end %>
+        <% end %>
+      <% end %>
+    </ul>
+
+  </ul>
+</div>

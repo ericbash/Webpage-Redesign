@@ -1,0 +1,79 @@
+<!-- edited 2/26/2019 by Jack Dubbs: Adeded stylesheet for media table -->
+<!-- edited 2/26/2019 by Andrew Myers: Adeded stylesheet for Directions Page -->
+<!-- edited 2/26/2019 by Silvana Garcia: Adeded stylesheet for people_course page and if statement for same page -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title %></title>
+    <link type="text/css" href="../stylesheets/site.css" rel="stylesheet"/>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/media_table.css"/>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/directions.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/people_course.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/noteworthy.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/background.css">
+  </head>
+  <body>
+    <ul>
+      <% if current_page.data.title == "Home" %>
+      <%= "<li id=\"current\">" %>
+      <% else %>
+      <%= "<li>" %>
+      <% end %>
+      <a href="index.html">Home</a></li>
+
+      <% if current_page.data.title == "Background" %>
+      <%= "<li id=\"current\">" %>
+      <% else %>
+      <%= "<li>" %>
+      <% end %>
+      <a href="background.html">Background</a></li>
+
+      <% if current_page.data.title == "Media and Press" %>
+      <%= "<li id=\"current\">" %>
+      <% else %>
+      <%= "<li>" %>
+      <% end %>
+      <a href="media_table.html">Media Appreance</a></li>
+
+      <% if current_page.data.title == "Awards" %>
+      <%= "<li id=\"current\">" %>
+      <% else %>
+      <%= "<li>" %>
+      <% end %>
+      <a href="noteWorthy.html">Awards</a></li>
+
+    <% if current_page.data.title == "People and Courses" %>
+      <%= "<li id=\"current\">" %>
+      <% else %>
+      <%= "<li>" %>
+      <% end %>
+      <a href="people_course.html">Teachings</a></li>
+
+      <% if current_page.data.title == "Publications" %>
+        <%= "<li id=\"current\">" %>
+        <% else %>
+        <%= "<li>" %>
+        <% end %>
+        <a href="publications.html">Publications</a></li>
+
+
+      <% if current_page.data.title == "Contact" %>
+      <%= "<li id=\"current\">" %>
+      <% else %>
+      <%= "<li>" %>
+      <% end %>
+      <a href="directions.html">Contact</a></li>
+    </ul>
+    <%= yield %>
+    <ul style="font-size:10px">
+      <p>
+	Creators: Eric Bash, Jack Dubbs, Silvana Garcia, Kavin Kaviarasan, Andrew Myers
+      </p>
+    </ul>
+  </body>
+</html>

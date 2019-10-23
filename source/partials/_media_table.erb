@@ -1,0 +1,43 @@
+<!-- Created 2/25/2019 by Jack Dubbs -->
+<div class="content">
+  <table id="media_table">
+    <% file_arr = [data.media.TV_and_Video.tv_and_video,data.media.Radio.radio,data.media.Print.print]%>
+    <% 3.times do |i| %>
+      <% case i %>
+        <% when 0 %>
+          <tr>
+            <th class="medium">TV and Video</th><th class="medium"></th><th class="medium"></th>
+          </tr>
+        <% when 1 %>
+          <tr>
+            <th class="medium">Radio</th><th class="medium"></th><th class="medium"></th>
+          </tr>
+        <% when 2 %>
+          <tr>
+            <th class="medium">Print</th><th class="medium"></th><th class="medium"></th>
+          </tr>
+      <% end %>
+      <tr class="header">
+        <th>Source</th>
+        <th>Title</th>
+        <th>Link</th>
+      </tr>
+      <% file_arr[i].each do |item| %>
+        <tr class="info">
+        <% item.each_with_index do |info,i| %>
+          <% if i == 0%>
+            <td class="source"> <%= info %> </td>
+          <% elsif i == 1%>
+            <td class="title"> <%= info %> </td>
+            <% if item.length == 2 %>
+              <td class="link"></td>
+            <% end %>
+          <% elsif i == 2%>
+            <td class="link"> <%= link_to('Click Me',info,:class => 'link')%> </td>
+          <% end %>
+        <% end %>
+        </tr>
+      <% end %>
+    <% end %>
+  </table>
+</div>

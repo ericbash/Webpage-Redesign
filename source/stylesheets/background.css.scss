@@ -1,0 +1,32 @@
+// File created by Andrew Myers 2/27/2019
+
+table.background {
+    // border-collapse: collapse;
+    width: 100%;
+}
+
+.background th {
+    height: 40px;
+    background-color: #52658f;
+    color: white;
+    font-size: 1.2em;
+}
+
+.background td {
+    height: 30px;
+    padding: 2px;
+    font-size: 1.1em;
+}
+
+.background tr:nth-child(even) {
+    background-color: #e8e8e8;
+}
+
+.background tr:hover {
+    background-color: #d5d5d5;
+}
+
+h2.background {
+    color: #333a56;
+    font-size: 1.87;
+}

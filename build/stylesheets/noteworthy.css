@@ -1,0 +1,18 @@
+th#header_title {
+  font-size: 18px;
+  text-align: middle;
+  color: DarkBlue; }
+
+table#award_table {
+  font-family: arial;
+  border-collapse: collapse;
+  height: 100%; }
+
+table#award_table td, table#award_table th {
+  border: 1.0px solid #CCC;
+  font-size: 15px;
+  font-weight: 100px; }
+
+table#award_table tr, table#award_table td {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(White), to(Blue));
+  background-image: linear-gradient(to bottom right, White, Blue); }

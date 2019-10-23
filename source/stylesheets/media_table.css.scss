@@ -1,0 +1,96 @@
+// All of File Created 2/25/2019 by Jack Dubbs
+// Eric Edited on 2/26
+
+$background: #bfbfbf;
+
+table#media_table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  height: 100%;
+}
+table#media_table td,table#media_table th {
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+}
+
+table#media_table th.medium {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-align: left;
+  column-count: 3;
+  background-color: #960000;
+  color: white;
+}
+
+table#media_table tr.header th {
+  text-align: left;
+}
+
+table#media_table tr.header:nth-child(odd) {
+  background-color: $background;
+}
+
+table#media_table tr.info:nth-child(odd){
+  background-color: $background;
+}
+
+table#media_table tr.info:hover {
+  background-color: #ddd;
+}
+
+table#media_table td.link a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.greeting {
+  font-size: 28px;
+}
+.signature {
+  font-family: "URW Chancery L", cursive;
+  font-size: 38px;
+}
+
+table#publication_table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  height: 100%;
+}
+table#publication_table td,table#publication_table th {
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+table#publication_table th.type {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-align: left;
+  column-count: 3;
+  background-color: #960000;
+  color: white;
+}
+
+table#publication_table tr.description th {
+  text-align: left;
+}
+
+table#publication_table tr.description:nth-child(odd) {
+  background-color: $background;
+}
+
+table#publication_table tr.details:nth-child(odd){
+  background-color: $background;
+}
+
+table#publication_table tr.details:hover {
+  background-color: #ddd;
+}
+
+table#publication_table td.link a {
+  color: blue;
+  text-decoration: underline;
+}
